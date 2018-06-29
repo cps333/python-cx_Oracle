@@ -24,7 +24,7 @@ Connection Object
 
     The exit point for the connection as a context manager. The default (but
     deprecated) behavior is to roll back the transaction in the event of an
-    exception and to commit it otherwise. If the value of
+    exception and to commit it otherwise, and then leave the connection open. If the value of
     `cx_Oracle.__future__.ctx_mgr_close` is set to True, however, the
     connection is closed instead. In cx_Oracle 7, this will become the default
     behaviour.
